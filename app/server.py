@@ -21,7 +21,7 @@ from starlette.staticfiles import StaticFiles
 model_config_name = 'app/models/model.config'
 model_file_name = 'app/models/best_model.h5'
 
-classes = ['0', '1', '2']
+classes = ['with_mask', 'without_mask', 'with_mask_incorrect']
 path = Path(__file__).parent
 img_size = 224
 app = Starlette()
